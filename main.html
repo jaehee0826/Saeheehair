@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .header .logo img {
+            height: 200px; /* 로고 이미지의 높이 설정 */
+        }
+        .header .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .header .buttons button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #FF8C00;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .header .buttons button:hover {
+            background-color: #FF8C00;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            background-color: #e9ecef;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        .categories a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+        .categories a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="main.html"><img src="SAEHEEHAIR.png" alt="SAEHEEHAIR 로고"></a>
+        </div>
+        <div class="buttons">
+            <button onclick="location.href='login.html'">로그인</button>
+            <button onclick="location.href='signup.html'">회원가입</button>
+        </div>
+    </div>
+
+    <div class="categories">
+        <a href="#category1">카테고리 1</a>
+        <a href="#category2">카테고리 2</a>
+        <a href="#category3">카테고리 3</a>
+        <a href="#category4">카테고리 4</a>
+    </div>
+
+    <div class="content">
+        <p>머리스타일 사진 4장 들어갈 배경</p>
+    </div>
+</body>
+</html>

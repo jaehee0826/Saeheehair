@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header .logo img {
+            height: 200px; /* 로고 이미지의 높이 설정 */
+        }
+        .signup-form {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .signup-form h2 {
+            margin-bottom: 20px;
+        }
+        .signup-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+        .signup-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #FF8C00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .signup-form button:hover {
+            background-color: #e07b00;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="main.html"><img src="SAEHEEHAIR.png" alt="SAEHEEHAIR 로고"></a>
+        </div>
+    </div>
+
+    <div class="signup-form">
+        <h2>회원가입</h2>
+        <input type="text" placeholder="아이디" required>
+        <input type="email" placeholder="이메일" required>
+        <input type="password" placeholder="비밀번호" required>
+        <input type="password" placeholder="비밀번호 확인" required>
+        <button type="submit">회원가입</button>
+    </div>
+</body>
+</html>
